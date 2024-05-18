@@ -1,0 +1,1406 @@
+ 
+body {
+    background: linear-gradient(90deg, rgba(20,30,48,1) 0%, rgba(30,47,68,1) 35%, rgba(36,59,85,1) 100%);
+}
+
+ 
+
+/* Estilos generales para el título   https://colorhunt.co/palette/22283131363f76abaeeeeeee */
+/* Estilos generales para el index Gestion de cuentas*/
+.divDeFondo {
+    background-size: cover; /* Ajusta la imagen para cubrir todo el div */
+    background-position: center; /* Centra la imagen en el div */
+    position: relative; /* Ajusta la posición del contenido en relación con el div */
+    width: 100%;
+    height:100vh;
+ 
+}
+ 
+.imgImagenFondo {
+    position: absolute; /* Ajusta la posición absoluta para la imagen de fondo */
+    z-index: 0; /* Establece la capa de la imagen detrás del contenido */
+    opacity: 0.04; /* Opcional: ajusta la opacidad de la imagen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1); /* Centra la imagen y ajusta el tamaño */
+}
+.contenedorImagenIndex{
+    margin-left: 45%;
+    width: 8%;
+    height: auto;
+ 
+}
+.imgImagenIndex {
+ 
+    width: 100%; /* Establece la anchura de la imagen al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.bienvenidaGestiondecuentas {
+    color: #222831;
+    font-size: 1.3em;
+}
+
+.h1Gestiondecuentas {
+    margin-top: 70px;
+    color: #EEEEEE;
+    margin-bottom: 4px;
+}
+
+.contenedor {
+
+    align-items: center;
+    height: 100%;
+    position: relative; /* Ajusta la posición del contenido en relación con el div */
+    z-index: 1; /* Establece la capa del contenido por encima de la imagen */
+  
+}
+
+.CajatitulobotonesGestiondecuentas {
+    display: flex;
+    padding: 50px 10px;
+    max-width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #222831;
+  
+    border-radius: 12px;
+    border: 0.1px solid #3498db;
+    background-color: rgb(0, 0, 0, 0.38); /* Color negro semitransparente */
+}
+
+.botonInicioyRegistro {
+    padding: 10px 10px;
+    background-color: #EEEEEE;
+    color: #222831;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contenedorderecha{
+   width:50%; 
+    padding: 8px;
+    border-right: 0.1px solid #ffffff;
+}
+.contenedorizquierda{
+    padding: 8px;
+  width:50%; 
+}
+
+ .botonInicioyRegistro:hover {
+        background-color: #222831;
+        color: #EEEEEE;
+        border: 0.1px solid #fff;
+    }
+
+@media screen and (max-width: 460px) {
+    .h1Gestiondecuentas {
+        margin-top: 140px;
+        font-size: 1.2em;
+
+    }
+}
+
+
+/* Estilos generales para el registro */
+.registro-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.38); /* Color negro semitransparente */
+}
+@media screen and (max-width: 460px) {
+    .registro-box {
+ 
+        width: 90%;
+ 
+    }
+    
+}
+input:focus {
+    background-color: transparent; /* Esto hará que el fondo sea transparente */
+    color: #fff; /* Esto hará que el texto sea blanco */
+}
+
+    .registro-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+    }
+
+    .registro-box .input-box {
+        position: relative;
+    }
+
+        .registro-box .input-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+        .registro-box .input-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .registro-box .input-box input:focus ~ label,
+        .registro-box .input-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 12px;
+        }
+
+    .registro-box .botonRegistrar {
+        margin-bottom: 5%;
+        background-color: #EEEEEE;
+        color: #222831;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        padding: 3px;
+        font-size: .9em;
+        width: 29%;
+        border: none;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    }
+
+        .registro-box .botonRegistrar:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+            border: 0.1px solid #fff;
+        }
+
+/* Estilos generales para el inicio de sesion */
+
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.38); /* Color negro semitransparente */
+}
+@media screen and (max-width: 460px) {
+    .login-box {
+        width: 90%;     
+    }
+}
+
+        .login-box h2 {
+            margin: 0 0 30px;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .login-box .user-box {
+            position: relative;
+        }
+
+            .login-box .user-box input {
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #fff;
+                margin-bottom: 30px;
+                border: none;
+                border-bottom: 1px solid #fff;
+                outline: none;
+                background: transparent;
+            }
+
+            .login-box .user-box label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #fff;
+                pointer-events: none;
+                transition: .5s;
+            }
+
+            .login-box .user-box input:focus ~ label,
+            
+            .login-box .user-box input:valid ~ label {
+                top: -20px;
+                left: 0;
+                color: #03e9f4;
+                font-size: 12px;
+            }
+
+.botonEntrar {
+    margin-bottom:5%;
+    background-color: #EEEEEE;
+    color: #222831;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 3px;
+    font-size: 1.2em;
+    width: 25%;
+    border:none;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+    .botonEntrar:hover {
+        background-color: #222831;
+        color: #EEEEEE;
+        border: 0.1px solid #fff;
+    }
+
+.BotonCambiarAccion {
+    color: #EEEEEE;
+    font-size: 0.77em;
+    padding:4px;
+}
+   
+    .BotonCambiarAccion:hover {
+        background-color: #31363F; 
+        color: #EEEEEE; 
+        border-radius: 5px; 
+        transition: background-color .5s ease, color 1.5s ease; 
+    }
+
+/* Estilos generales para la barra de navegacion */
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+/* HEADINGS */
+
+h1, p {
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    color: #000;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* BASIC SETUP */
+
+.page-wrapper {
+    position: relative; /* Cambiado a relative para permitir z-index */
+    z-index: 10; /* Valor más alto que el de los elementos .item */
+    width: 100%;
+    height: auto;
+}
+
+.nav-wrapper {
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+/*
+.grad-bar {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: gradbar 15s ease infinite;
+    -moz-animation: gradbar 15s ease infinite;
+    animation: gradbar 15s ease infinite;
+}
+
+/* NAVIGATION */
+
+.navbar {
+ 
+    background: #222831;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+ 
+}
+
+    .navbar img {
+        height: 36px;
+        width: auto;
+        justify-self: start;
+        margin-left: 15px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        justify-self: end;
+    }
+
+.nav-item a {
+    padding:8px;
+    color: #EEEEEE;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+    margin-left: 20px;
+}
+
+    .nav-item a:hover {
+        background-color: #31363F;
+        color: #EEEEEE;
+        border-radius: 5px;
+        transition: background-color .5s ease, color .5s ease;
+        border: 1px solid #EEEEEE;
+    }
+
+/* SECTIONS */
+
+.headline {
+    width: 100%;
+    height: 50vh;
+    min-height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1435224668334-0f82ec57b605?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    display: flex;
+    padding: 50px 20px;
+    justify-content: space-around;
+}
+
+.feature-container {
+    flex-basis: 30%;
+    margin-top: 10px;
+}
+
+    .feature-container p {
+        color: #000;
+        text-align: center;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .feature-container img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+/* SEARCH FUNCTION */
+
+#search-icon {
+    font-size: 0.9rem;
+    margin-top: 3px;
+    margin-left: 15px;
+    transition: color 0.3s ease-out;
+}
+
+    #search-icon:hover {
+        color: #3498db;
+        cursor: pointer;
+    }
+
+.search {
+    transform: translate(-35%);
+    -webkit-transform: translate(-35%);
+    transition: transform 0.7s ease-in-out;
+    color: #3498db;
+}
+
+.no-search {
+    transform: translate(0);
+    transition: transform 0.7s ease-in-out;
+}
+
+.search-input {
+    position: absolute;
+    top: -4px;
+    right: -125px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.6s ease;
+}
+
+.search-active {
+    opacity: 1;
+    z-index: 0;
+}
+
+input {
+    border: 0;
+    border-left: 1px solid #ccc;
+    border-radius: 0; /* FOR SAFARI */
+    outline: 0;
+    padding: 5px;
+}
+
+/* MOBILE MENU & ANIMATION */
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #3f3f3f;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+    justify-self: end;
+    margin-right: 25px;
+    display: none;
+}
+
+    .menu-toggle:hover {
+        cursor: pointer;
+    }
+
+#mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* KEYFRAME ANIMATIONS */
+
+@-webkit-keyframes gradbar {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes gradbar {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes gradbar {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* Media Queries */
+
+/* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 720px) {
+    .features {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    /* MOBILE HEADINGS */
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    /* MOBILE NAVIGATION */
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        justify-content: start;
+        top: 55px;
+        background-color: rgba(49, 54, 63, 0.97);
+        border-radius:25px;
+        width: 98%;
+        height: calc(100vh - 55px);
+        transform: translate(-101%);
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .navbar li {
+        padding: 15px;
+    }
+
+        .navbar li:first-child {
+            margin-top: 50px;
+        }
+
+        .navbar li a {
+            font-size: 1rem;
+        }
+
+    .menu-toggle, .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        transform: translate(0%) !important;
+    }
+
+    /* SECTIONS */
+
+    .headline {
+        height: 20vh;
+    }
+
+    .feature-container p {
+        margin-bottom: 25px;
+    }
+
+    .feature-container {
+        margin-top: 20px;
+    }
+
+        .feature-container:nth-child(2) {
+            order: -1;
+        }
+
+    /* SEARCH DISABLED ON MOBILE */
+
+    #search-icon {
+        display: none;
+    }
+
+    .search-input {
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* estilos generales del contenido de inicio */
+.cabezeradeInicio {
+    mask-image: linear-gradient(
+        black 80%,
+        transparent
+    );
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    display: flex; /* Establece el contenedor como un flex container */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Alinea el texto al centro */
+    margin-left: auto;
+    margin-right: auto;
+   /*  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(92, 91, 91, 0.10)); /* Degradado de negro a rojo semitransparente */
+    border-bottom: 1px solid white;
+}
+.h1EnCabesasoInicio {
+    font-weight: bold;
+    font-size:50px;
+}
+.h1EnCabesasoInicio {
+    font-weight: bold;
+    font-size: 50px;
+    animation: movimiento 1s ease-in-out infinite alternate; /* Establece la animación */
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0); /* Sin movimiento */
+    }
+
+    100% {
+        transform: translateY(-10px); /* Movimiento hacia arriba */
+    }
+}
+
+.divCentrador {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.divcentrados {
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+     
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.38);
+
+    flex: 1;
+    max-width: 25%;
+    min-width: 20%;
+    margin: 0 15px;
+}
+
+.textareatituloInicio {
+    margin-top: 2%;
+    color: floralwhite;
+    text-align: center;
+    font-size: 100%;
+    width: 100%;
+    height: 2.5em; /* Una línea de contenido */
+    resize: none; /* No permitir que se redimensione */
+    border: none; /* Sin bordes */
+    background-color: transparent; /* Fondo transparente */
+    outline: none;
+    font-weight: 800;
+ 
+}
+ 
+.textareaContenidoInicio {
+    background-color: red;
+    color: floralwhite;
+    text-align: center;
+    font-size: 100%;
+    width: 100%;
+    height: 12em; /* Una línea de contenido */
+    resize: none; /* No permitir que se redimensione */
+    border: none; /* Sin bordes */
+    background-color: transparent; /* Fondo transparente */
+    outline: none;
+}
+textarea::-webkit-scrollbar {
+    width: 5px; /* Anchura de la barra de desplazamiento */
+  }
+  
+  textarea::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo de la pista de la barra de desplazamiento */
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background: #888; /* Color del 'pulgarcito' de la barra de desplazamiento */
+  }
+  
+
+@media (max-width: 600px) {
+    /* Si el ancho de la página es menor o igual a 600px, 
+           los elementos se apilan verticalmente */
+    .h1EnCabesasoInicio {
+        font-size: 25px;
+    }
+    .divcentrados {
+        margin-top: 4%;
+        max-width: 100%;
+    }
+
+    .divCentrador {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.divCentrador2 {
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+ 
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.38);
+
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.divcentradosImagen {
+    justify-content: center;
+    flex: 1;
+ 
+    max-width: 35%;
+ 
+    margin: 0 5px;
+}
+.divcentradosTexto {
+    padding: 15px;
+   
+    flex: 1;
+     width: 50%;
+ 
+    margin: 0 5px;
+}
+
+.imagenDeinicio {
+    width: 85%; /* La imagen ocupará el 100% del ancho del div padre */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+}
+
+.textareaDeImagen {
+    color: floralwhite;
+    text-align: left;
+    font-size: 15px;
+    width: 100%;
+    height: 25em; /* Una línea de contenido */
+    resize: none; /* No permitir que se redimensione */
+    border: none; /* Sin bordes */
+    background-color: transparent; /* Fondo transparente */
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    /* Si el ancho de la página es menor o igual a 600px, 
+           los elementos se apilan verticalmente */
+    .divCentrador2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .divcentradosImagen {
+        max-width: 100%;
+    }
+    .imagenDeinicio {
+        width: 95%; /* La imagen ocupará el 100% del ancho del div padre */
+        margin-left:2.5%;
+    }
+    .divcentradosTexto {
+       width: 90%;
+    }
+}
+.botonesdeInicio{
+    text-align: center;
+    margin-top: 60px;
+}
+.boton {
+    margin-top: 3%;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+ 
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.38);
+
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    border-radius: 5px; /* Redondear esquinas del botón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+  }
+  
+  .boton:hover {
+    background-color: #3294c8; /* Cambiar color de fondo al pasar el ratón por encima */
+  }
+
+.PiedePagina {
+        font-size: 12px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.78);
+        padding: 1px; /* Espacio opcional alrededor del contenido */
+}
+
+
+/* estilos generales del contenido de Tematicas */
+ 
+ 
+main {
+    position: relative;
+    width: 100%;
+  
+  
+}
+
+.item {
+ 
+    width: 200px;
+    height: 300px;
+    list-style-type: none;
+    position: fixed; /* Cambiado de absolute a fixed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
+    transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+}
+
+    .item:nth-child(1),
+    .item:nth-child(2) {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        border-radius: 0;
+        box-shadow: none;
+        opacity: 1;
+    }
+
+    .item:nth-child(3) {
+        left: 50%;
+    }
+
+    .item:nth-child(4) {
+        left: calc(50% + 220px);
+    }
+
+    .item:nth-child(5) {
+        left: calc(50% + 440px);
+    }
+
+    .item:nth-child(6) {
+        left: calc(50% + 660px);
+        opacity: 0;
+    }
+
+
+.content {
+ 
+    background-color: rgb(0, 0, 0, 0.80); /* Color negro semitransparente */
+    padding: 15px;
+    width: min(30vw,400px);
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+    font: 400 0.85rem helvetica,sans-serif;
+    color: white;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    opacity: 0;
+    display: none;
+    & .title
+       
+
+{
+
+ 
+    text-transform: uppercase;
+    color:white;
+}
+
+& .description {
+  
+    margin: 1rem 0 1.5rem;
+    font-size: 0.8rem;
+}
+
+& button {
+    width: fit-content;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+}
+
+.item:nth-of-type(2) .content {
+    display: block;
+    animation: show 0.75s ease-in-out 0.3s forwards;
+}
+
+@keyframes show {
+    0% {
+        filter: blur(5px);
+        transform: translateY(calc(-50% + 75px));
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.nav2 {
+    background-color: rgb(0, 0, 0, 0.30); /* Color negro semitransparente */
+    border-radius: 10px;
+    position: absolute;
+    top: 2rem; /* Cambiado de bottom a top */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    user-select: none;
+}
+
+    .nav2 .btn {
+        background-color: rgba(255,255,255,0.5);
+        color: rgba(0,0,0,0.7);
+        border: 2px solid rgba(0,0,0,0.6);
+        margin: 0 0.25rem;
+        padding: 0.75rem;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+        .nav2 .btn:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+
+
+@media (width > 650px) and (width < 900px) {
+    .content {
+        & .title
+
+{
+    font-size: 1rem;
+}
+
+& .description {
+    font-size: 0.7rem;
+}
+
+& button {
+    font-size: 0.7rem;
+}
+
+}
+
+.item {
+    width: 160px;
+    height: 270px;
+    &:nth-child(3)
+
+{
+    left: 50%;
+}
+
+&:nth-child(4) {
+    left: calc(50% + 170px);
+}
+
+&:nth-child(5) {
+    left: calc(50% + 340px);
+}
+
+&:nth-child(6) {
+    left: calc(50% + 510px);
+    opacity: 0;
+}
+
+}
+}
+
+@media (width < 650px) {
+    .content {
+        & .title
+
+{
+    font-size: 0.9rem;
+}
+
+& .description {
+    font-size: 0.65rem;
+}
+
+& button {
+    font-size: 0.7rem;
+}
+
+}
+
+.item {
+    width: 130px;
+    height: 220px;
+    &:nth-child(3)
+
+{
+    left: 50%;
+}
+
+&:nth-child(4) {
+    left: calc(50% + 140px);
+}
+
+&:nth-child(5) {
+    left: calc(50% + 280px);
+}
+
+&:nth-child(6) {
+    left: calc(50% + 420px);
+    opacity: 0;
+}
+
+}
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplica la animación al modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.5s ease-in-out;  
+}
+
+ 
+.modal-content {
+    margin: 5% auto;
+    padding: 20px;
+    border: 2px solid #888;
+    width: 80%;
+    height: 500px;
+    background-color: rgb(0, 0, 0, 0.82);
+    border-radius: 60px 5px 50px 60px;
+}
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    .close:hover,
+    .close:focus {
+        color: #165750;
+       
+        border-radius: 50%;
+ 
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+@media (max-width: 600px)  {
+    .modal-content {
+ margin-top:75px;
+        width: 100%;
+ 
+    }
+}
+.tituloModal {
+    color: #ffffff;
+}
+.parrafoModal {
+      color: #ffffff;
+}
+
+/* estilos generales del contenido de Inscripcion */
+.botonesdeInscripcion{
+    text-align: center;
+    margin-top: 10px;
+}
+.modalB {
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.779);
+  }
+  
+  .modal-contenidoB {
+    border-radius: 12px;
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .cerrarB {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .cerrarB:hover,
+  .cerrarB:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+ 
+.contenedordeInscripcion {
+    padding: 15px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.125);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.38);
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    border: 0.1px solid #3498db;
+    background-color: rgb(0, 0, 0, 0.38);
+    }
+.formDeInscripcicon{
+ 
+    display: flex;
+    flex-wrap: wrap;
+}
+.ClaseLabelUnion{
+    margin-top: 4%;
+    margin-left: 8%;
+    flex-grow:1 ;
+     
+}
+.LabeldeTransaccion{
+    color: #fff;
+    font-size: 20px;
+ 
+}
+ 
+ .servicioFormulario{
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 3px;
+    color: #000;
+    font-size: 15px;
+ }
+ .servicioFormularioInscrip{
+    background-color: #808080;
+
+ }
+ .servicioFormularioInscrip2{
+    background-color: #4d4d4d;
+    color: #fff;
+ }
+ .divbotondeEnviarInscripcion{
+ 
+    width: 100%;
+    text-align: right;
+    margin-top: 30px;
+   
+  
+ }
+ .mensajeDeadvertencia{
+    font-size: 13px;
+ }
+ .boronEnviarFormulario{
+    border-radius: 6px;
+    padding: 10px;
+
+ }
+ @media (max-width: 600px)  {
+    .contenedordeInscripcion {
+ 
+        width: 100%;
+        margin-left: 0%;
+       }
+ }
+
+/*/* estilos generales de contenido de perfil*/
+.contenedor_datos_perfil{
+    padding: 15px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.125);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.38);
+    margin-top: 40px;
+    margin-left: 10%;
+    width: 80%;
+}
+ 
+.parrafoDeDatos{
+    text-align: left;
+    
+    margin-top: 25px;
+ 
+}
+.nombreCampo{
+    font-size: 120%;
+    font-weight: 400;
+    
+    color: rgb(194, 180, 180);
+   
+}
+.datosCampo{
+    font-size: 100%;
+    color: rgb(249, 249, 249);
+}
+ 
+/* Estilos para el modal */
+.modalED {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Fondo oscuro */
+  }
+  
+  .modalED-contenido {
+    
+    background-color: #000000e0;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .cerrar:hover,
+  .cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos adicionales para el modal de editar datos */
+  .editar-datos {
+    text-align: center;
+  }
+  
+  .editar-datos input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .label_de_edNombre{
+    width: 30%;
+    color: #fff;
+    font-size: 10px;
+  }
+  .input_de_edNombre{
+    max-width: 70%;
+    color: #fff;
+    background-color: #00000000;
+  }
+  .label_de_edCorreo{
+    width: 30%;
+    color: #fff;
+    font-size: 10px;
+  }
+  .input_de_edCorreo{
+    max-width: 70%;
+    color: #fff;
+    background-color: #00000000;
+  }
+  .label_de_edTelefono{
+   width: 30%;
+   color: #fff;
+    font-size: 10px;
+  }
+  .input_de_edTelefono{
+    max-width: 70%;
+    color: #fff;
+    background-color: #00000000;
+  }
+  .QR{
+    border: solid #fff 1px;
+    background-color: rgba(255, 0, 0, 0);
+    width: 200px;
+    height: 200px;
+    float: right;
+  }
+  @media screen and (max-width: 650px) {
+    .QR {
+        float: none; /* Elimina la propiedad float */
+        display: block; /* Cambia el display a bloque */
+        margin-top: 10px; /* Agrega un margen superior para separarlo de otros elementos */
+    }
+}
